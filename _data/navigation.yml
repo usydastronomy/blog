@@ -1,0 +1,9 @@
+# This file define the links available in the nav bar
+# Please sort by importance
+# See documentation here: https://mmistakes.github.io/minimal-mistakes/docs/navigation/#masthead
+
+main:
+  - title: "Home"
+    url: "https://usydastro.org.au"
+  - title: "Become a Member"
+    url: "https://usydastro.org.au/signup"
