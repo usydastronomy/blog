@@ -18,20 +18,82 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Blog
+# Refer to https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+
+title: SUAS Blog
 email: usydastronomy@gmail.com
+name: Sydney University Astronomy Society
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to the Sydney University Astronomy Society (SUAS) blog!
+  We are a group of students from The University of Sydney,
+  passionate about astronomy and all things space.
 domain: "blog.usydastro.org.au"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://blog.usydastro.org.au" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-github_username:  usydastronomy
+
+minimal_mistakes_skin: "dark"
+search: true
+title_separator: "|"
+#subtitle: "Version 2.0"
+permalink: /:categories/:title/
+paginate_path: /page:num/
+timezone: Australia/Sydney # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+locale: "en"
+
+teaser: /assets/images/telescope_red_light.jpg # Default teaser image
+logo: /assets/images/Emblem_(Mono_White).svg
+og_image: /assets/images/Logo.png
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      show_date: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      author_profile: false
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+facebook:
+  username: "usydastronomy"
+
+footer:
+  links:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://facebook.com/usydastronomy"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/usydastro"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: https://github.com/usydastronomy
+    - label: "E-Mail"
+      icon: "fab fa-fw fa-envelope"
+      url: mailto:usydastronomy@gmail.com
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+
 plugins:
   - jekyll-feed
 
@@ -43,7 +105,9 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+include: ["_pages"]
+exclude:
+  - CNAME
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
