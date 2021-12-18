@@ -92,7 +92,8 @@ footer:
       url: mailto:usydastronomy@gmail.com
 
 # Build settings
-theme: minimal-mistakes-jekyll
+#theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 
 plugins:
   - jekyll-feed
