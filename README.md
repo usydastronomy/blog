@@ -6,7 +6,7 @@ This is the Jekyll site source for the [blog site](https://blog.usydastro.org.au
 
 ### Writing a blog post
 
-- Markdown syntax
+- Markdown syntax ([Learn basic Markdown syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax))
 - Basic Git knowledge
 
 ### Maintaining the site
@@ -20,6 +20,10 @@ This is the Jekyll site source for the [blog site](https://blog.usydastro.org.au
 2. Populate the Markdown front matter (the metadata between `---`) by referencing to this [example post](https://raw.githubusercontent.com/usydastronomy/blog/873e6557d58526af5e76e0b3d52c5fc33f17d292/_posts/2021-12-15-welcome-to-jekyll.markdown).
 3. Write your article, commit and push to GitHub.
 4. When you are ready, merge the branch that you push to into `gh-pages` to publish the post.
+
+## Inserting images / video / files
+
+TODO
 
 ## Directories
 - `_data`    : 
