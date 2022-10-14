@@ -85,7 +85,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/usydastro"
     - label: "Discord"
-      icon: "fa-brands fa-discord"
+      icon: "fab fa-fw fa-discord"
       url: "https://discord.gg/nGVW4qJMSV"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
